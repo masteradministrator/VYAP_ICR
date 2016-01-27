@@ -26,12 +26,6 @@ SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 DEBUG = True
 
 
-# EMAIL_HOSTS = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'infovapti@gmail.com'
-# EMAIL_HOST_PASSWORD = 'aditya369'
-# EMAIL_PORT = 1025
-# EMAIL_USE_TLS = True
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # '''
 # https://accounts.google.com/displayunlockcaptcha
@@ -47,7 +41,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
     'my_auth',
