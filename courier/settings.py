@@ -133,10 +133,10 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
-        'localhost:9000',
-        'localhost:5000',
-        '127.0.0.1:9000',
-        '127.0.0.1:5000',
+        #'localhost:9000',
+        #'localhost:5000',
+        #'127.0.0.1:9000',
+        #'127.0.0.1:5000',
     )
 
 CORS_ALLOW_METHODS = (
