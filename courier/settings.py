@@ -26,6 +26,8 @@ SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# Honor the 'Host' header
+ALLOWED_HOSTS = ['localhost:9000']
 
 
 # '''
@@ -41,10 +43,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
-    'corsheaders',
     'my_auth',
     'icr',
 )
@@ -56,17 +57,34 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.common.BrokenLinkEmailsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 )
 
+# REST FRAMEWORK
+
 REST_FRAMEWORK = {
-    'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer',
-    )
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        # 'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    # Use hyperlinked styles by default.
+    # Only used if the `serializer_class` attribute is not set on a view.
+    'DEFAULT_MODEL_SERIALIZER_CLASS':
+        'rest_framework.serializers.HyperlinkedModelSerializer',
+
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+    # Make the default renderer class JSON when in production to prevent users from using the browsable API
+    'DEFAULT_RENDERER_CLASSES': [
+         'rest_framework.renderers.JSONRenderer',
+    ]
+
 }
 
 ALLOWED_HOSTS = ['*']
