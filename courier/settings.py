@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'courier1',
         'USER': 'postgres',
         'PASSWORD': 'aditya369',
-        'HOST': '127.0.0.1',
+        'HOST': 'https://gentle-falls-61243.herokuapp.com/',
         'PORT': '5432',
     }
 }
