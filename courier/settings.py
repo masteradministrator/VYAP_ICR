@@ -27,7 +27,7 @@ SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 DEBUG = False
 
 # Honor the 'Host' header
-ALLOWED_HOSTS = ['localhost:9000']
+ALLOWED_HOSTS = ['*']
 
 
 # '''
@@ -165,7 +165,6 @@ CORS_ALLOW_METHODS = (
 )
     
 CORS_ALLOW_HEADERS = (
-        'Access-Control-Allow-Origin',
         'x-requested-with',
         'content-type',
         'accept',
