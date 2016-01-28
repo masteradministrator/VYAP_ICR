@@ -26,8 +26,6 @@ SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# Honor the 'Host' header
-ALLOWED_HOSTS = ['*']
 
 
 # '''
