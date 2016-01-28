@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'courier1',
         'USER': 'postgres',
         'PASSWORD': 'aditya369',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
