@@ -63,6 +63,12 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
 )
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+
 ALLOWED_HOSTS = ['*']
 
 ROOT_URLCONF = 'courier.urls'
