@@ -14,6 +14,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import dj_database_url
 
+#ALLOWED_HOSTS = ['*']
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -24,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 
@@ -50,6 +52,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -57,7 +60,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.common.BrokenLinkEmailsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 )
 
@@ -118,7 +120,7 @@ WSGI_APPLICATION = 'courier.wsgi.application'
       #  'PASSWORD': 'aditya369',
        # 'HOST': '127.0.0.1',
         #'PORT': '5432',
-#    }
+ #   }
 #}
 DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_RED_URL"])}
 
@@ -144,14 +146,14 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
         #'localhost:9000',
         #'localhost:5000',
         #'127.0.0.1:9000',
         #'127.0.0.1:5000',
-        '103.22.172.148',
+        #'103.22.172.148',
     )
 
 CORS_ALLOW_METHODS = (
@@ -164,7 +166,7 @@ CORS_ALLOW_METHODS = (
 )
     
 CORS_ALLOW_HEADERS = (
-        'Access-Control-Allow-Origin',
+
         'x-requested-with',
         'content-type',
         'accept',
@@ -172,3 +174,4 @@ CORS_ALLOW_HEADERS = (
         'authorization',
         'x-csrftoken'
 )
+
