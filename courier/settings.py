@@ -151,6 +151,7 @@ CORS_ORIGIN_WHITELIST = (
         #'localhost:5000',
         #'127.0.0.1:9000',
         #'127.0.0.1:5000',
+        '103.22.172.148',
     )
 
 CORS_ALLOW_METHODS = (
