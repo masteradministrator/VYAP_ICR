@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "description": "A sample code project demonstrating serving static files using express",
   "dependencies": {
-    "express": "*"
+    "express": "*",
+    "express": "4.13.4",    
+    "tower": "0.4.0-12"
    },
-  "engine": "node >=0.6.x"
+    "engines": {
+      "node": "0.6.15"
+    , "npm": "1.1.9"
+    , 
+  }
 }
 
