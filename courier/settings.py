@@ -14,7 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 import dj_database_url
 
-#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ky1s8f3z(5f2p!^kv!+cluqmerviaeub-m!ujq-u1^!3kzo^yl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 
@@ -111,18 +111,18 @@ WSGI_APPLICATION = 'courier.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-#DATABASES = {
- #   'default': {
-  #      
-   #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #    'NAME': 'courier1',
-     #   'USER': 'postgres',
-      #  'PASSWORD': 'aditya369',
-       # 'HOST': '127.0.0.1',
-        #'PORT': '5432',
- #   }
-#}
-DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_RED_URL"])}
+DATABASES = {
+    'default': {
+        
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'courier1',
+        'USER': 'postgres',
+        'PASSWORD': 'aditya369',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+#DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_RED_URL"])}
 
 
 # Internationalization
@@ -166,7 +166,7 @@ CORS_ALLOW_METHODS = (
 )
     
 CORS_ALLOW_HEADERS = (
-
+        'Access-Control-Allow-Origin',
         'x-requested-with',
         'content-type',
         'accept',
