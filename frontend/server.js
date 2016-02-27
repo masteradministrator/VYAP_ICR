@@ -3,5 +3,5 @@ var app = express();
 
 app.use(express.static(__dirname + '/templates'));
 
-app.listen(9000);
+app.listen((process.env.PORT || 9000));
 
