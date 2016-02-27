@@ -8,8 +8,20 @@
 		<meta name="description" content="HTML5 comes with many awesome features. One of the feature is form validation without using any kind of javascript or jquery." />
 		<meta name="keywords" content="form,html form,css form,html5 contact form,contact form" />
 		<meta name="author" content="Codeconvey" />
+		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-47356263-1', 'codeconvey.com');
+		  ga('send', 'pageview');
+		</script>
 		<div class="header">
 			
 			<h1>Vyaapti Couriers</h1>
@@ -19,7 +31,7 @@
 		<div class="container">
 
 			<div class="wrapper">
-				<form class="ccform">
+				<form method="post" action="" class="ccform">
 					<br>
 					<div>
 					    <table class="tableClass"  width="1000">
@@ -43,7 +55,7 @@
 								            </td>
 								            <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="senders_code" placeholder="Sender's Code"  >
+								                	<input type="text" placeholder="Sender's Code" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -59,7 +71,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="senders_company" placeholder="Sender's Company"  >
+								                	<input type="text" placeholder="Sender's Company" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -78,7 +90,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="senders_address" placeholder="Sender's Address"  >
+								                	<input type="text" placeholder="Sender's Address" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -94,7 +106,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="senders_name"  placeholder="Sender's Name"  >
+								                	<input type="text" placeholder="Sender's Name" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -112,7 +124,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="senders_phoneno" placeholder="Sender's PhoneNumber"  >
+								                	<input type="text" placeholder="Sender's PhoneNumber" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -128,7 +140,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="senders_pincode" placeholder="Sender's Pincode"  >
+								                	<input type="text" placeholder="Sender's Pincode" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -146,7 +158,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="senders_state" placeholder="Sender's State"  >
+								                	<input type="text" placeholder="Sender's State" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -162,7 +174,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="senders_email" placeholder="Sender's EmailID"  >
+								                	<input type="text" placeholder="Sender's EmailID" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -189,7 +201,7 @@
 								            </td>
 								            <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_code" placeholder="Receiver's Code"  >
+								                	<input type="text" placeholder="Receiver's Code" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -205,7 +217,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_company" placeholder="Receiver's Company"  >
+								                	<input type="text" placeholder="Receiver's Company" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -224,7 +236,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_address" placeholder="Receiver's Address"  >
+								                	<input type="text" placeholder="Receiver's Address" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -240,7 +252,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_name" placeholder="Receiver's Name"  >
+								                	<input type="text" placeholder="Receiver's Name" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -258,7 +270,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_phoneno" placeholder="Receivers's PhoneNumber"  >
+								                	<input type="text" placeholder="Receivers's PhoneNumber" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -274,7 +286,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_pincode" placeholder="Receivers's Pincode"  >
+								                	<input type="text" placeholder="Receivers's Pincode" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -292,7 +304,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_state" placeholder="Receivers's State"  >
+								                	<input type="text" placeholder="Receivers's State" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -308,7 +320,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="recivers_email" placeholder="Receivers's EmailID"  >
+								                	<input type="text" placeholder="Receivers's EmailID" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -335,7 +347,7 @@
 								            </td>
 								            <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text"  name="special_instructions" placeholder="Special Instructions"  >
+								                	<input type="text" placeholder="Special Instructions" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -351,7 +363,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="service_sticker" placeholder="Service Sticker"  >
+								                	<input type="text" placeholder="Service Sticker" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -369,7 +381,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="original_senders_name" placeholder="Original Senders Name"  >
+								                	<input type="text" placeholder="Original Senders Name" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -385,7 +397,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="date" name="Date_Picker" value="2016-02-27">
+								                	<input type="date" value="2016-02-27">
 								                </div>
 								            </td>
 								        </tr>
@@ -403,7 +415,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="courier_service_used" placeholder="Courier Service used"  >
+								                	<input type="text" placeholder="Courier Service used" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -419,7 +431,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="courier_pickedup_by_name" placeholder="Employee Name"  >
+								                	<input type="text" placeholder="Employee Name" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -437,7 +449,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="pickup_empid" placeholder="Courier Picked up Employee ID"  >
+								                	<input type="text" placeholder="Courier Picked up Employee ID" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -453,7 +465,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="general_description" placeholder="General Description"  >
+								                	<input type="text" placeholder="General Description" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -472,7 +484,7 @@
 								            </td>
 								            <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="origin_of_the_courier" placeholder="Origin of the Courier"  >
+								                	<input type="text" placeholder="Origin of the Courier" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -488,7 +500,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="destination_of_the_courier" placeholder="Destination of the Courier"  >
+								                	<input type="text" placeholder="Destination of the Courier" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -506,7 +518,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="invoice_details" placeholder="Original Senders Name"  >
+								                	<input type="text" placeholder="Original Senders Name" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -522,7 +534,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="invoice_value" placeholder="Invoice Value">
+								                	<input type="text" placeholder="Invoice Value">
 								                </div>
 								            </td>
 								        </tr>
@@ -540,7 +552,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="airway_bill_number" placeholder="Airway Bill Number used"  >
+								                	<input type="text" placeholder="Airway Bill Number used" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -556,7 +568,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="number_of_packages" placeholder="Number Of Packages"  >
+								                	<input type="text" placeholder="Number Of Packages" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -574,7 +586,7 @@
 								            </td>
 								             <td  align="left">
 								            	<div style="overflow:hidden">
-								                	<input type="text" name="gross_weight"  placeholder="Gross Weight"  >
+								                	<input type="text" placeholder="Gross Weight" required>
 								                </div>
 								            </td>
 								        </tr>
@@ -590,7 +602,7 @@
 								            </td>
 								             <td  align="left">
 								               	<div style="overflow:hidden">
-								                	<input type="text" name="dimensonal_weight" placeholder="Dimensonal Weight "  >
+								                	<input type="text" placeholder="Dimensonal Weight " required>
 								                </div>
 								            </td>
 								        </tr>
@@ -599,20 +611,17 @@
 					            </td>
 
 					       	</tr>
-                            <tr>
-                                <td><pre>       </pre></td>
-                            </tr>
+
 					    </table>
 				    </div>
 				    <br>
 
-                    <button class="ccbtn" type="submit" id="icr-button">Submit</button>
+	                <input class="ccbtn" type="submit" value="Submit">  
 				</form>
 
 			</div>
 			
 		</div><!-- /container -->
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-        <script src="js/dashboard.js"></script>
+		
 	</body>
 </html>
