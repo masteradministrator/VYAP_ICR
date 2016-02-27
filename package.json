@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A sample code project demonstrating serving static files using express",
   "engines": {
-      "node": ">=0.10.0"
+      "node": "4.1.1"
     , "npm": "3.5.0"
   },
   "dependencies": {
