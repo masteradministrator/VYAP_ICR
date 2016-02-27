@@ -113,18 +113,18 @@ WSGI_APPLICATION = 'courier.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
+# DATABASES = {
+#     'default': {
         
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'courier1',
-        'USER': 'postgres',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
-#DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_RED_URL"])}
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'courier1',
+#         'USER': 'postgres',
+#         'PASSWORD': '',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
+DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_RED_URL"])}
 
 
 # Internationalization
