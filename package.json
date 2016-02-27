@@ -4,7 +4,6 @@
   "description": "A sample code project demonstrating serving static files using express",
   "engines": {
       "node": "0.10.25"
-    , "npm": "3.5.0"
   },
   "dependencies": {
     "express": "*",
