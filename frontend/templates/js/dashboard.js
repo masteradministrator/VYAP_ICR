@@ -13,7 +13,7 @@
 	 $('.wrapper').addClass('form-success');
 
 
-	 var url = "http://localhost:8000/icr";
+	 var url = "https://vyaapicr.herokuapp.com/icr";
      var xhr = new XMLHttpRequest();
      xhr.open("POST", url, true);
 
