@@ -124,8 +124,8 @@ WSGI_APPLICATION = 'courier.wsgi.application'
 #         'PORT': '5432',
 #     }
 # }
-DATABASE_URL='postgres://postgres:@127.0.0.1/courier1'
-#DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_CRIMSON_URL"])}
+#DATABASE_URL='postgres://postgres:@127.0.0.1/courier1'
+DATABASES = {'default': dj_database_url.config(default=os.environ["HEROKU_POSTGRESQL_CRIMSON_URL"])}
 
 
 # Internationalization
