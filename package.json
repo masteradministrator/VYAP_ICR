@@ -8,7 +8,8 @@
   "dependencies": {
     "express": "*",
     "express": "4.13.4",    
-    "tower": "0.4.0-12"
+    "tower": "0.4.0-12",
+    "jQuery": "^1.11.1 || >=2.1.1"
    }
 }
 
