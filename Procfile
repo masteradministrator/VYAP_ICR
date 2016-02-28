@@ -1,1 +1,1 @@
-web: gunicorn backend courier.wsgi:application & node frontend/server.js
+web: gunicorn backend courier.wsgi:application --bind 0.0.0.0:$PORT & node frontend/server.js
