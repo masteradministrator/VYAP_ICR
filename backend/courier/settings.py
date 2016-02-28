@@ -63,6 +63,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
     'django.middleware.common.BrokenLinkEmailsMiddleware',
     'django.middleware.common.CommonMiddleware',
+    # 'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 )
 
 # REST FRAMEWORK
