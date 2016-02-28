@@ -13,7 +13,7 @@
 	 $('.wrapper').addClass('form-success');
 
 
-	 var url = "https://vyaapicr.herokuapp.com/login";
+	 var url = "https://0.0.0.0:8000/login";
      var xhr = new XMLHttpRequest();
      xhr.open("POST", url, true);
 
