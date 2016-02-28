@@ -13,7 +13,7 @@
 	 $('.wrapper').addClass('form-success');
 
 
-	 var url = "https://0.0.0.0:8000/login";
+	 var url = "https://vyaapicr.herokuapp.com/login";
      var xhr = new XMLHttpRequest();
      xhr.open("POST", url, true);
 
@@ -27,6 +27,11 @@
         	data = JSON.parse(data); 
             sessionStorage.token = data.auth_token;
             window.location="dashboard.html";
+        }
+        else
+        {
+            console.log("xhr.status : ");
+            console.log(xhr.status);
         }
      }
      
