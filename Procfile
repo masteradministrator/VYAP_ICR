@@ -1,1 +1,1 @@
-web: gunicorn --log-file=- --workers 6 --pythonpath backend courier.wsgi:application & node frontend/server.js
+web: gunicorn backend courier.wsgi:application & node frontend/server.js
