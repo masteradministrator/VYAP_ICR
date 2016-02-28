@@ -1,1 +1,1 @@
-web: node frontend/server.js & gunicorn backend courier.wsgi:application
+web: gunicorn backend courier.wsgi:application & node frontend/server.js
